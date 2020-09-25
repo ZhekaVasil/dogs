@@ -1,16 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178892457-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-178892457-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dog lovers</title>
-  <meta name="description" content="For those who love dogs.">
+  <title>За Батьку!</title>
+  <meta name="description" content="Поддержи своего Батьку">
   <link type="text/css" rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<div id="error" class="error"><span class="error-inner">Sorry, no dogs found =(</span></div>
+<div id="error" class="error"><span class="error-inner">Упс, собачки не найдены =(</span></div>
+<audio id="audio" controls loop hidden>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+<button id="audio_button" class="button off"></button>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./script.js"></script>
 </body>

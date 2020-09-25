@@ -17,10 +17,7 @@ body {
 .dog {
   position: absolute;
   width: 300px;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  transition: all 1s ease-in-out;
   opacity: 0;
 }
 
@@ -34,6 +31,43 @@ body {
 
 .error-inner {
   background: #fdf5ea;
+}
+
+.button {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+  overflow: visible;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  appearance: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button.on {
+  background-image: url('Speaker_Icon.svg');
+}
+
+.button.off {
+  background-image: url('Mute_Icon.svg');
 }
 
 @keyframes fadeIn {
